@@ -22,6 +22,6 @@ $shapesDescrption = '[
 {"type" : "triangle", "color" : "red", "summits" : [{"x" : "100", "y" : "200"},{"x" : "400", "y" : "200"},{"x" : "100", "y" : "400"} ]}
 ]';
 
-$svgFact = new ShapeSvgFactory(json_decode($shapesDescrption, true));
+$svgFact = new ShapeFactory(json_decode($shapesDescrption, true));
 echo $svgFact->getSvgCanva();
 echo $svgFact->getAreas();
